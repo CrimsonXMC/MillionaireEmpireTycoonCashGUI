@@ -33,7 +33,7 @@ TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.Position = UDim2.new(0.290458471, 0, -0.116929442, 0)
 TextButton.Size = UDim2.new(0, 265, 0, 50)
 TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Click for +100B Cash"
+TextButton.Text = "Click for +100quad Cash"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 24.000
 
@@ -43,7 +43,7 @@ local function NSUF_fake_script() -- TextButton.LocalScript
     local script = Instance.new('LocalScript', TextButton)
 
     function leftClick()
-        game.ReplicatedStorage.Events.CrateClaim:FireServer("Cash", "100000000000")
+        game.ReplicatedStorage.Events.CrateClaim:FireServer("Cash", "1000000000000000")
     end
     
     script.Parent.MouseButton1Click:Connect(leftClick)
